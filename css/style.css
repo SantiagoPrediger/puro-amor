@@ -1,3 +1,25 @@
 .navbar-nav {
     margin: 0 auto;
 }
+.card-body a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.card-body a:hover {
+    color: rgb(247, 199, 226);
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+.card {
+    margin: 10px;
+    border: none !important;
+}
+.navbar-brand {
+    margin-left: 30px;
+}
