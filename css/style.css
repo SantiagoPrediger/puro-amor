@@ -7,12 +7,14 @@
 .navbar-nav {
     margin: 0 auto;
 }
+
 .card-body a {
     list-style: none;
     text-decoration: none;
     color: black;
     font-size: 25px;
 }
+
 .card-body a:hover {
     color: rgb(247, 199, 226);
 }
@@ -22,13 +24,16 @@
     justify-content: space-evenly;
     margin-bottom: 50px;
 }
+
 .card {
     margin: 10px;
     border: none !important;
 }
+
 .navbar-brand {
     margin: 0 auto;
 }
+
 .col {
     padding: 20px;
 }
@@ -36,36 +41,59 @@
 .product img {
     width: 100%;
 }
+
 .productos {
     margin-top: 50px;
 }
+
 /* FOOTER */
 .footer {
     background-color: rgb(253, 237, 246);
     width: 100%;
 }
-.redes img{
-    width: 40%;
+
+.redes img {
+    width: 100%;
 }
+
 ul.redes {
     margin: 0 auto;
+    padding-inline-start: 0px !important;
 }
+
+ul.redes {
+    padding-inline-start: 40px
+}
+
 p {
     margin-bottom: 0 !important;
 }
+
 .copy {
     margin-top: 30px;
     font-size: 13px;
 }
 
+.fondito {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
 @media (min-width: 860px) {
     .product {
-        display: flex; 
+        display: flex;
     }
+
     .navbar-brand {
         margin-left: 30px;
     }
-    .redes img{
-        width: 15%;
+
+    .redes img {
+        width: 100%;
+    }
+    .fondito {
+        font-size: 1rem;
     }
 }
