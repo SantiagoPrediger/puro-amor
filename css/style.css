@@ -5,6 +5,7 @@
 
 body {
     background-image: url(../img/fondopatron.jpg);
+    min-height: 80%;
 }
 
 .navbar-nav {
@@ -113,5 +114,10 @@ p {
 
     .fondito {
         font-size: 1rem;
+    }
+    .foto img{
+        max-width: 80%;
+        margin: 0 auto;
+        border-radius: 4px;
     }
 }
