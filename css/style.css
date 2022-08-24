@@ -11,6 +11,11 @@ body {
 
 .navbar-nav {
     margin: 0 auto;
+    align-items: flex-end;
+}
+.nav-link {
+    display: flex !important;
+    justify-content: flex-end!important;
 }
 
 /* TARJETA DE PRODUCTO */
