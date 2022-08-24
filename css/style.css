@@ -1,9 +1,10 @@
 * {
-    list-style: none;
     text-decoration: none !important;
     box-sizing: border-box;
 }
-
+body {
+    background-image: url(/img/fondopatron.jpg);
+}
 .navbar-nav {
     margin: 0 auto;
 }
@@ -59,6 +60,7 @@
 ul.redes {
     margin: 0 auto;
     padding-inline-start: 0px !important;
+    list-style: none;
 }
 
 ul.redes {
@@ -79,6 +81,19 @@ p {
     padding: 10px;
     border-radius: 5px;
     font-size: 13px;
+}
+.accordion-button:not(.collapsed) {
+    color: rgb(129, 129, 129);
+}
+
+/* PREGUNTAS FRECUENTES */
+.tit {
+    padding: 15px 0;
+}
+
+.accordion {
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media (min-width: 860px) {
