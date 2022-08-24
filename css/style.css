@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(/img/fondopatron.jpg);
+    background-image: url(../img/fondopatron.jpg);
 }
 
 .navbar-nav {
