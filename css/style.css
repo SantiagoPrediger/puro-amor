@@ -5,12 +5,15 @@
 
 body {
     background-image: url(../img/fondopatron.jpg);
-    min-height: 80%;
 }
+
+/* NAVBAR*/
 
 .navbar-nav {
     margin: 0 auto;
 }
+
+/* TARJETA DE PRODUCTO */
 
 .card-body a {
     list-style: none;
@@ -32,10 +35,6 @@ body {
 .card {
     margin: 10px;
     border: none !important;
-}
-
-.navbar-brand {
-    margin: 0 auto;
 }
 
 .col {
@@ -100,6 +99,11 @@ p {
 }
 
 @media (min-width: 860px) {
+    
+    
+    .navbar-brand {
+        margin: 0 auto;
+    }
     .product {
         display: flex;
     }
