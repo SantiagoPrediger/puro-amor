@@ -10,164 +10,166 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/1d9ae81a86.js" crossorigin="anonymous"></script>
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg bg-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./img/Logo.jpg" alt="logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/Logo.jpg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pages/cartucheras.html">Cartucheras</a></li>
+                <li><a class="dropdown-item" href="./pages/neceseres.html">Neceseres</a></li>
+                <li><a class="dropdown-item" href="./pages/hogar.html">Hogar</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./pages/productos.html">Todos los productos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/1.jpg" class="d-block w-100" alt="imagen de descuento">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/2.jpg" class="d-block w-100" alt="imagen de envio">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Productos
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="text-center productos">PRODUCTOS</h1>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="./img/asusena.jpeg" class="card-img-top" alt="cartuchera">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cartuchera Azucena</a>
+          <p class="card-text text-center">Cartuchera plastica ideal para el colegio o la universidad.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $840</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./img/Cala.jpeg" class="card-img-top" alt="neceser">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cala</a>
+          <p class="card-text text-center">Neceser ideal para llevar lo basico en la cartera.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./img/cesto.jpeg" class="card-img-top" alt="cesto de tela">
+        <div class="card-body">
+          <a class="card-title justify-content-center d-flex">Cesto Jasmin</a>
+          <p class="card-text">Cesto multiusos ideal para el baño o la cocina.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./img/mandarina.jpeg" class="card-img-top" alt="neceser">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Neceser Mandarina</a>
+          <p class="card-text">Cartuchera o Neceser de gran tamaño.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $1000</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <div class="product">
+        <div class="col">
+          <img src="./img/portada-cartucheras.png" alt="cartucheras">
+        </div>
+        <div class="col">
+          <img src="./img/portada-hogar.png" alt="hogar">
+        </div>
+        <div class="col">
+          <img src="./img/portada-neceser.png" alt="neceser">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="d-flex flex-column">
+      <div>
+        <h3 class="redesFooter text-center mt-3">Visita nuestras redes sociales</h3>
+        <ul class="redes d-flex justify-content-center">
+          <li class="m-3">
+            <a href="https://instagram.com/puroamorhm" target="_blank">
+              <img src="./img/instagram.png" alt="logo instagram">
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./pages/cartucheras.html">Cartucheras</a></li>
-              <li><a class="dropdown-item" href="./pages/neceseres.html">Neceseres</a></li>
-              <li><a class="dropdown-item" href="./pages/hogar.html">Hogar</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="./pages/productos.html">Todos los productos</a></li>
-            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+          <li class="m-3">
+            <a href="https://www.facebook.com/puroamorhm" target="_blank">
+              <img src="./img/facebook.png" alt="logo facebook">
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          <li class="m-3">
+            <a href="https://walink.co/4c24cf" target="_blank">
+              <img src="./img/whatsapp.png" alt="logo whatsapp">
+            </a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <div class="fondito m-3">
+          <p class="text-center fw-light">Envios a todo el pais</p>
+          <p class="text-center fw-light">Compra sin salir de tu casa</p>
+        </div>
+        <div class="fondito m-3">
+          <p class="text-center fw-light">Hasta 12 cuotas</p>
+          <p class="text-center fw-light">con todas las tarjetas</p>
+        </div>
+        <div class="fondito m-3">
+          <p class="text-center fw-light">Compra segura</p>
+          <p class="text-center fw-light">Protegemos todos tus datos</p>
+        </div>
       </div>
     </div>
-  </nav>
-</header>
-
-<body>
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/1.jpg" class="d-block w-100" alt="imagen de descuento">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/2.jpg" class="d-block w-100" alt="imagen de envio">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <h1 class="text-center productos">PRODUCTOS</h1>
-  <div class="row">
-    <div class="card" style="width: 18rem;">
-      <img src="./img/asusena.jpeg" class="card-img-top" alt="cartuchera">
-      <div class="card-body">
-        <a href="#" class="card-title justify-content-center d-flex">Cartuchera Azucena</a>
-        <p class="card-text text-center">Cartuchera plastica ideal para el colegio o la universidad.</p>
-        <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $840</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./img/Cala.jpeg" class="card-img-top" alt="neceser">
-      <div class="card-body">
-        <a href="#" class="card-title justify-content-center d-flex">Cala</a>
-        <p class="card-text text-center">Neceser ideal para llevar lo basico en la cartera.</p>
-        <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./img/cesto.jpeg" class="card-img-top" alt="cesto de tela">
-      <div class="card-body">
-        <a class="card-title justify-content-center d-flex">Cesto Jasmin</a>
-        <p class="card-text">Cesto multiusos ideal para el baño o la cocina.</p>
-        <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./img/mandarina.jpeg" class="card-img-top" alt="neceser">
-      <div class="card-body">
-        <a href="#" class="card-title justify-content-center d-flex">Neceser Mandarina</a>
-        <p class="card-text">Cartuchera o Neceser de gran tamaño.</p>
-        <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $1000</a>
-      </div>
-    </div>
-  </div>
-  <div class="text-center">
-    <div class="product">
-      <div class="col">
-        <img src="./img/portada-cartucheras.png" alt="cartucheras">
-      </div>
-      <div class="col">
-        <img src="./img/portada-hogar.png" alt="hogar">
-      </div>
-      <div class="col">
-        <img src="./img/portada-neceser.png" alt="neceser">
-      </div>
-    </div>
-  </div>
+    <p class="copy text-center">&copy; 2022 Copyright Puro Amor HM</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
-</body>
-<footer class="footer">
-  <div class="d-flex flex-column">
-    <div>
-      <h3 class="redesFooter text-center mt-3">Visita nuestras redes sociales</h3>
-      <ul class="redes d-flex justify-content-center">
-        <li class="m-3">
-          <a href="https://instagram.com/puroamorhm" target="_blank">
-            <img src="./img/instagram.png" alt="logo instagram">
-          </a>
-        </li>
-        <li class="m-3">
-          <a href="https://www.facebook.com/puroamorhm" target="_blank">
-            <img src="./img/facebook.png" alt="logo facebook">
-          </a>
-        </li>
-        <li class="m-3">
-          <a href="https://walink.co/4c24cf" target="_blank">
-            <img src="./img/whatsapp.png" alt="logo whatsapp">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="d-flex flex-column justify-content-center">
-      <div class="fondito m-3">
-        <p class="text-center fw-light">Envios a todo el pais</p>
-        <p class="text-center fw-light">Compra sin salir de tu casa</p>
-      </div>
-      <div class="fondito m-3">
-        <p class="text-center fw-light">Hasta 12 cuotas</p>
-        <p class="text-center fw-light">con todas las tarjetas</p>
-      </div>
-      <div class="fondito m-3">
-        <p class="text-center fw-light">Compra segura</p>
-        <p class="text-center fw-light">Protegemos todos tus datos</p>
-      </div>
-    </div>
-  </div>
-  <p class="copy text-center">&copy; 2022 Copyright Puro Amor HM</p>
-</footer>
-
+  </body>
 </html>

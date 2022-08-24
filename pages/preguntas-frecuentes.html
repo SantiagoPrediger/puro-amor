@@ -9,169 +9,172 @@
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg bg-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../img/Logo.jpg" alt="logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="./productos.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Productos
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./cartucheras.html">Cartucheras</a></li>
-              <li><a class="dropdown-item" href="./neceseres.html">Neceseres</a></li>
-              <li><a class="dropdown-item" href="./hogar.html">Hogar</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="./productos.html">Todos los productos</a></li>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/Logo.jpg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./productos.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./cartucheras.html">Cartucheras</a></li>
+                <li><a class="dropdown-item" href="./neceseres.html">Neceseres</a></li>
+                <li><a class="dropdown-item" href="./hogar.html">Hogar</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./productos.html">Todos los productos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="tit text-center">Preguntas Frecuentes</h1>
+    <div class="accordion mb-5" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            ¿Como comprar?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol>
+              <li>Seleccioná el producto que queres comprar.</li>
+              <li>Elegí la cantidad y seleccioná "Agregar al carrito".</li>
+              <li>Completá los datos de contacto.</li>
+              <li>Ingresá tu código postal para elegir el método de envíos y completá los datos.</li>
+              <li>Elegí el método de pago y completá tus datos.</li>
+              <li>Finalmente revisá la información de la compra para confirmarla.</li>
+              <li>Una vez acreditado el pago nos comunicaremos con vos para coordinar el envío o notificar el códigos de
+                seguimiento si elegiste Correo Argentino o E-Pick.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            ¿Cuales son las formas de pago?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Podes abonar de las siguientes formas.</strong>
+            <ul>
+              <li>Tarjetas de crédito.</li>
+              <li>Tarjetas de débito.</li>
+              <li>Mercado pago.</li>
+              <li>Efectivo o Transferencia.</li>
+              <li>Transferencia bancaria.</li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            ¿Como recibo mi compra?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Realizamos entregas por los siguientes medios</strong>
+            <ul>
+              <li>Envios por Correo Argentino.</li>
+              <li>Envios por E-Pick.</li>
+              <li>Retiro por sucursal. Av. Balbin 1106 - San Miguel.</li>
+              <li>Punto de encuentro.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            ¿Cuanto tarda en llegar mi compra?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>El tiempo de entrega depende del metodo de envio</strong>
+            <ul>
+              <li>Por Correo Argentino la demora es de 3 a 6 días hábiles luego de ser despachado.</li>
+              <li>Los demás métodos tardan entre 1 a 5 días hábiles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img src="../img/hilo.jpg" class="w-100" alt="hilos">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="d-flex flex-column">
+      <div>
+        <h3 class="redesFooter text-center mt-3">Visita nuestras redes sociales</h3>
+        <ul class="redes d-flex justify-content-center">
+          <li class="m-3">
+            <a href="https://instagram.com/puroamorhm" target="_blank">
+              <img src="../img/instagram.png" alt="logo instagram">
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+          <li class="m-3">
+            <a href="https://www.facebook.com/puroamorhm" target="_blank">
+              <img src="../img/facebook.png" alt="logo facebook">
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
+          <li class="m-3">
+            <a href="https://walink.co/4c24cf" target="_blank">
+              <img src="../img/whatsapp.png" alt="logo whatsapp">
+            </a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
       </div>
     </div>
-  </nav>
-</header>
-
-<body>
-  <h1 class="tit text-center">Preguntas Frecuentes</h1>
-  <div class="accordion mb-5" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          ¿Como comprar?
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <ol>
-            <li>Seleccioná el producto que queres comprar.</li>
-            <li>Elegí la cantidad y seleccioná "Agregar al carrito".</li>
-            <li>Completá los datos de contacto.</li>
-            <li>Ingresá tu código postal para elegir el método de envíos y completá los datos.</li>
-            <li>Elegí el método de pago y completá tus datos.</li>
-            <li>Finalmente revisá la información de la compra para confirmarla.</li>
-            <li>Una vez acreditado el pago nos comunicaremos con vos para coordinar el envío o notificar el códigos de
-              seguimiento si elegiste Correo Argentino o E-Pick.</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          ¿Cuales son las formas de pago?
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>Podes abonar de las siguientes formas.</strong>
-          <ul>
-            <li>Tarjetas de crédito.</li>
-            <li>Tarjetas de débito.</li>
-            <li>Mercado pago.</li>
-            <li>Efectivo o Transferencia.</li>
-            <li>Transferencia bancaria.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          ¿Como recibo mi compra?
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>Realizamos entregas por los siguientes medios</strong>
-          <ul>
-            <li>Envios por Correo Argentino.</li>
-            <li>Envios por E-Pick.</li>
-            <li>Retiro por sucursal. Av. Balbin 1106 - San Miguel.</li>
-            <li>Punto de encuentro.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          ¿Cuanto tarda en llegar mi compra?
-        </button>
-      </h2>
-      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>El tiempo de entrega depende del metodo de envio</strong>
-          <ul>
-            <li>Por Correo Argentino la demora es de 3 a 6 días hábiles luego de ser despachado.</li>
-            <li>Los demás métodos tardan entre 1 a 5 días hábiles.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+    <p class="copy text-center">&copy; 2022 Copyright Puro Amor HM</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
 </body>
-<footer class="footer">
-  <div class="d-flex flex-column">
-    <div>
-      <h3 class="redesFooter text-center mt-3">Visita nuestras redes sociales</h3>
-      <ul class="redes d-flex justify-content-center">
-        <li class="m-3">
-          <a href="https://instagram.com/puroamorhm" target="_blank">
-            <img src="../img/instagram.png" alt="logo instagram">
-          </a>
-        </li>
-        <li class="m-3">
-          <a href="https://www.facebook.com/puroamorhm" target="_blank">
-            <img src="../img/facebook.png" alt="logo facebook">
-          </a>
-        </li>
-        <li class="m-3">
-          <a href="https://walink.co/4c24cf" target="_blank">
-            <img src="../img/whatsapp.png" alt="logo whatsapp">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <p class="copy text-center">&copy; 2022 Copyright Puro Amor HM</p>
-</footer>
-
 </html>
