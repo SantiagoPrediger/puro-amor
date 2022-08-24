@@ -1,58 +1,217 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
-                <img src="../img/Logo.jpg" alt="logo">
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/Logo.jpg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./productos.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./cartucheras.html">Cartucheras</a></li>
-                      <li><a class="dropdown-item" href="./neceseres.html">Neceseres</a></li>
-                      <li><a class="dropdown-item" href="./hogar.html">Hogar</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="./productos.html">Todos los productos</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
-  <body>
-    <h1>Hola Mundo</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./cartucheras.html">Cartucheras</a></li>
+                <li><a class="dropdown-item" href="./neceseres.html">Neceseres</a></li>
+                <li><a class="dropdown-item" href="./hogar.html">Hogar</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./productos.html">Todos los productos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="text-center">Productos</h1>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <img src="../img/asusena.jpeg" class="card-img-top" alt="cartuchera">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cartuchera Azucena</a>
+          <p class="card-text text-center">Cartuchera plastica ideal para el colegio o la universidad.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $840</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/Cala.jpeg" class="card-img-top" alt="neceser">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cala</a>
+          <p class="card-text text-center">Neceser ideal para llevar lo basico en la cartera.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/cesto.jpeg" class="card-img-top" alt="cesto de tela">
+        <div class="card-body">
+          <a class="card-title justify-content-center d-flex">Cesto Jasmin</a>
+          <p class="card-text">Cesto multiusos ideal para el baño o la cocina.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/mandarina.jpeg" class="card-img-top" alt="neceser">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Neceser Mandarina</a>
+          <p class="card-text">Cartuchera o Neceser de gran tamaño.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $1000</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/asusena.jpeg" class="card-img-top" alt="cartuchera">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cartuchera Azucena</a>
+          <p class="card-text text-center">Cartuchera plastica ideal para el colegio o la universidad.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $840</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/Cala.jpeg" class="card-img-top" alt="neceser">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cala</a>
+          <p class="card-text text-center">Neceser ideal para llevar lo basico en la cartera.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/cesto.jpeg" class="card-img-top" alt="cesto de tela">
+        <div class="card-body">
+          <a class="card-title justify-content-center d-flex">Cesto Jasmin</a>
+          <p class="card-text">Cesto multiusos ideal para el baño o la cocina.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/mandarina.jpeg" class="card-img-top" alt="neceser">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Neceser Mandarina</a>
+          <p class="card-text">Cartuchera o Neceser de gran tamaño.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $1000</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/asusena.jpeg" class="card-img-top" alt="cartuchera">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cartuchera Azucena</a>
+          <p class="card-text text-center">Cartuchera plastica ideal para el colegio o la universidad.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $840</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/Cala.jpeg" class="card-img-top" alt="neceser">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cala</a>
+          <p class="card-text text-center">Neceser ideal para llevar lo basico en la cartera.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/cesto.jpeg" class="card-img-top" alt="cesto de tela">
+        <div class="card-body">
+          <a class="card-title justify-content-center d-flex">Cesto Jasmin</a>
+          <p class="card-text">Cesto multiusos ideal para el baño o la cocina.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/mandarina.jpeg" class="card-img-top" alt="neceser">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Neceser Mandarina</a>
+          <p class="card-text">Cartuchera o Neceser de gran tamaño.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $1000</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/asusena.jpeg" class="card-img-top" alt="cartuchera">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cartuchera Azucena</a>
+          <p class="card-text text-center">Cartuchera plastica ideal para el colegio o la universidad.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $840</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/Cala.jpeg" class="card-img-top" alt="neceser">
+        <div class="card-body">
+          <a href="#" class="card-title justify-content-center d-flex">Cala</a>
+          <p class="card-text text-center">Neceser ideal para llevar lo basico en la cartera.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/cesto.jpeg" class="card-img-top" alt="cesto de tela">
+        <div class="card-body">
+          <a class="card-title justify-content-center d-flex">Cesto Jasmin</a>
+          <p class="card-text">Cesto multiusos ideal para el baño o la cocina.</p>
+          <a href="#" class="btn btn-outline-secondary justify-content-center d-flex">Precio $700</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="d-flex flex-column">
+      <div>
+        <h3 class="redesFooter text-center mt-3">Visita nuestras redes sociales</h3>
+        <ul class="redes d-flex justify-content-center">
+          <li class="m-3">
+            <a href="https://instagram.com/puroamorhm" target="_blank">
+              <img src="../img/instagram.png" alt="logo instagram">
+            </a>
+          </li>
+          <li class="m-3">
+            <a href="https://www.facebook.com/puroamorhm" target="_blank">
+              <img src="../img/facebook.png" alt="logo facebook">
+            </a>
+          </li>
+          <li class="m-3">
+            <a href="https://walink.co/4c24cf" target="_blank">
+              <img src="../img/whatsapp.png" alt="logo whatsapp">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy text-center">&copy; 2022 Copyright Puro Amor HM</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
